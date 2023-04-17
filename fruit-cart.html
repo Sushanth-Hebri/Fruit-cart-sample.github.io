@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="visited_links.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="stylenav.css">
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&display=swap');
+table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 20px;
+      }
+      th, td {
+        text-align: left;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .subtotal, .total {
+        font-weight: bold;
+      }
+      .qty-input {
+        width: 40px;
+      }
+
+     .product-image{
+      height:50px;
+      width:70px;
+     }
+     .qty{
+      background-color: aqua;
+      height:30px;
+      width:40px;
+     }
+     .coupon{
+      height:90px;
+      max-width:100%;
+      background-color: rgb(184, 216, 216);
+      display:flex;
+      align-items:center;
+      justify-content:space-evenly;
+     }
+     .button-p{
+      height:50px;
+      width:150px;
+      border-radius: 30px;
+      background-color: rgb(66, 8, 243);
+      color:white;
+     
+     }
+     .button-p:hover{
+      color:white;
+      background-color: rgb(28, 8, 243);
+      transform: scaleX(1.1);
+     }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="orangelogo.png" alt="logo">
+<nav>
+    <ul class="nav_links">
+<li><a href="#">About us</a></li>
+<li><a href="#">Orders</a></li>
+<li><a href="cart.html">Cart</a></li>
+<li><a href="#">Help-line</a></li>
+    </ul>
+</nav>
+<a class="contact" href="#"><button>Contact&nbsp;&nbsp;</button></a>
+
+<!-- <img src="moon.png" alt="night mode" title="change mode"id="icon"> -->
+<img src="user.png" alt="user" title="account"id="iconic">
+<img src="cart.png" alt="cart"title="cart" id="cart">
+
+
+
+
+
+
+
+
+</header>
+<hr>
+<br><br> <br><br> <br><br> <br><br>
+
+
+<table>
+  <thead>
+    <tr>
+      
+      <th>Product Image</th>
+      <th>Product Description</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Subtotal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img  class="product-image"src="banana.png" alt="Product Image"></td>
+      <td>Banana</td>
+      <td>$19.99</td>
+      <td> <div class="qty"><input type="number" class="qty-input" value="1"></div></td>
+      <td class="subtotal">$19.99</td>
+    </tr>
+    <tr>
+      <td><img class="product-image"src="apple.png" alt="Product Image"></td>
+      <td>Apple</td>
+      <td>$29.99</td>
+      <td><input type="number" class="qty-input" value="2"></td>
+      <td class="subtotal">$59.98</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="total">Total (including GST)</td>
+      <td class="total">$79.97</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<hr>
+<div class="coupon">
+  <button class="button-p"type="button" href="fruit-cart.html" placeholder="Proceed">Add more</button>
+  <button class="button-p"type="button" href="#" placeholder="Proceed"> Proceed</button>
+  
+</div>
+<div id="link-map"></div>
+<script src="visited_links_js.js"></script>
+</body>
+</html>
